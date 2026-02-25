@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Báo giá nhanh | CÔNG TY TNHH NTS</title>
+    <meta
+      name="description"
+      content="Form báo giá vận tải container: điểm lấy, điểm giao, size cont, thời gian."
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+    <header class="site-header">
+      <div class="topbar">
+        <div class="container topbar-inner">
+          <div class="topbar-left">
+            <span class="top-pill"
+              ><span class="dot"></span><b>Điều phối 24/7</b></span
+            >
+            <a class="top-pill" href="tel:+0334376175"
+              >📞 <b>+84 334 376 175</b></a
+            >
+            <a class="top-pill" href="sangnguyen20962@gmail.com"
+              >✉️ <b>sangnguyen20962@gmail.com</b></a
+            >
+          </div>
+          <div class="topbar-right">
+            <span class="top-pill">📍 <b>TP. Hồ Chí Minh</b></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar">
+        <div class="container nav-inner">
+          <a class="brand" href="index.html">
+            <div class="brand-logo">🚚</div>
+            <div>
+              <div class="brand-name">CÔNG TY TNHH NTS</div>
+              <div class="brand-tag">
+                Vận tải container • Kéo cảng • Liên vận
+              </div>
+            </div>
+          </a>
+
+          <nav class="nav-desktop" aria-label="Menu chính">
+            <a data-nav href="index.html">Trang chủ</a>
+            <a data-nav href="about.html">Giới thiệu</a>
+            <a data-nav href="services.html">Dịch vụ</a>
+            <a data-nav href="fleet.html">Đội xe</a>
+            <a data-nav href="areas.html">Khu vực</a>
+            <a data-nav href="safety.html">An toàn</a>
+            <a data-nav href="faq.html">Hỏi đáp</a>
+            <a data-nav href="contact.html">Liên hệ</a>
+
+            <div class="dropdown" id="toolsDropdown">
+              <button type="button" aria-haspopup="true" aria-expanded="false">
+                Công cụ ▾
+              </button>
+              <div class="dropdown-menu" role="menu">
+                <a data-nav href="quote.html" role="menuitem"
+                  >Báo giá nhanh <small>→ giá & năng lực</small></a
+                >
+                <a data-nav href="track.html" role="menuitem"
+                  >Theo dõi lô hàng <small>→ trạng thái</small></a
+                >
+                <a data-nav href="pickup.html" role="menuitem"
+                  >Đặt lịch lấy hàng <small>→ điều phối</small></a
+                >
+                <a data-nav href="docs.html" role="menuitem"
+                  >Tài liệu <small>→ biểu mẫu</small></a
+                >
+              </div>
+            </div>
+          </nav>
+
+          <div class="nav-actions">
+            <a class="btn btn-outline" href="track.html">📦 Theo dõi</a>
+            <a class="btn btn-primary" href="quote.html">⚡ Báo giá</a>
+            <button
+              class="burger"
+              id="burger"
+              type="button"
+              aria-label="Mở menu"
+              aria-expanded="false"
+            >
+              ☰
+            </button>
+          </div>
+        </div>
+
+        <div class="mobile-panel" id="mobilePanel">
+          <div class="container mobile-links">
+            <div class="mobile-grid">
+              <a data-nav href="index.html">Trang chủ</a>
+              <a data-nav href="about.html">Giới thiệu</a>
+              <a data-nav href="services.html">Dịch vụ</a>
+              <a data-nav href="fleet.html">Đội xe</a>
+              <a data-nav href="areas.html">Khu vực</a>
+              <a data-nav href="safety.html">An toàn</a>
+              <a data-nav href="faq.html">Hỏi đáp</a>
+              <a data-nav href="contact.html">Liên hệ</a>
+            </div>
+            <div class="mobile-grid">
+              <a data-nav href="quote.html">⚡ Báo giá nhanh</a>
+              <a data-nav href="track.html">📦 Theo dõi</a>
+              <a data-nav href="pickup.html">🗓️ Đặt lịch lấy</a>
+              <a data-nav href="docs.html">📄 Tài liệu</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="page-hero">
+      <div class="container">
+        <h1>Báo giá nhanh</h1>
+        <p class="lead">
+          Điền thông tin tuyến và container để nhận báo giá & năng lực.
+        </p>
+      </div>
+    </div>
+
+    <main id="main" class="container">
+      <section class="section">
+        <div class="grid-2">
+          <div class="card">
+            <h3>Form yêu cầu báo giá</h3>
+            <form id="quoteForm">
+              <div class="form-row">
+                <div>
+                  <label for="qName">Họ tên</label>
+                  <input id="qName" name="name" required />
+                </div>
+                <div>
+                  <label for="qCompany">Công ty</label>
+                  <input id="qCompany" name="company" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div>
+                  <label for="qEmail">Email</label>
+                  <input id="qEmail" name="email" type="email" required />
+                </div>
+                <div>
+                  <label for="qPhone">Số điện thoại</label>
+                  <input id="qPhone" name="phone" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div>
+                  <label for="qOrigin">Điểm lấy (cảng/ICD/ga)</label>
+                  <input id="qOrigin" name="origin" required />
+                </div>
+                <div>
+                  <label for="qDest">Điểm giao</label>
+                  <input id="qDest" name="destination" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div>
+                  <label for="qContainer">Kích cỡ container</label>
+                  <select id="qContainer" name="container">
+                    <option>20'</option>
+                    <option selected>40'</option>
+                    <option>45'</option>
+                    <option>Khác / Chưa rõ</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="qDate">Ngày dự kiến lấy</label>
+                  <input id="qDate" name="date" type="date" />
+                </div>
+              </div>
+
+              <label for="qNotes">Ghi chú</label>
+              <textarea
+                id="qNotes"
+                name="notes"
+                placeholder="Lịch hẹn, chassis, cut-off, yêu cầu SOP..."
+              ></textarea>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">
+                  Gửi yêu cầu
+                </button>
+                <a
+                  class="btn btn-outline"
+                  href="mailto:dispatch@tencongty.com?subject=Yeu%20cau%20bao%20gia"
+                  >Email thay thế</a
+                >
+              </div>
+
+              <div
+                id="quoteMsg"
+                class="hint"
+                role="status"
+                aria-live="polite"
+              ></div>
+            </form>
+            <p class="hint">
+              Form demo (chưa gửi dữ liệu). Kết nối backend/CRM/TMS để nhận
+              thật.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Thông tin giúp báo giá chính xác</h3>
+            <ul class="list">
+              <li>Tên cảng/ICD/terminal + thời gian có thể lấy</li>
+              <li>Địa chỉ giao + giờ nhận</li>
+              <li>Yêu cầu lịch hẹn giao/trả rỗng</li>
+              <li>Size/loại cont + yêu cầu đặc thù</li>
+              <li>Chassis: khách/nhà xe/pool</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-bottom">
+        <span
+          >© <span id="year"></span> CÔNG TY TNHH NTS . Bảo lưu mọi quyền.</span
+        >
+        <span><a href="index.html">Về trang chủ</a></span>
+      </div>
+    </footer>
+  </body>
+</html>
